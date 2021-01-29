@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link href="css\styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header_title">To-Do App</h1>
+            <h2 class="header_subtitle">Hello</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <form id="newTodo">
+            <input type="text" placeholder='Add Todo' name='todos'>
+            <button>Add Todo</button>
+        </form>
+        <select id="my-Dropdown">
+            <option value="byEdited">Sort by edited</option>
+            <option value="byCreateAt">Sort by creation</option>
+            <option value="alphabet">Sort by date</option>
+        </select>
+        <div id="myTodos"></div>
+        <label>
+            <input type = "checkbox" id = "completed" >Hide Box
+        </label>
+    </div>
+    <script src="scripts\uuid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="scripts\todo-functions.js"></script>
+    <script src="scripts\todo-app.js"></script>
+
+</body>
+
+</html>
